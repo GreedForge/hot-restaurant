@@ -22,7 +22,7 @@
 
 			<div class="text-center">
 				<a href="/tables"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span> View Tables</button></a>
-				<a href="/"><button type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-home"></span></button></a>
+				<a href="/"><button type="button" class="homeButton btn btn-lg btn-default"><span class="glyphicon glyphicon-home"></span></button></a>
 			</div>
 		</div>
 
@@ -86,6 +86,11 @@
 	// In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
 	// Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
 	// In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+    // $(".homeButton").on("click", function(){
+        
+        
+    // });
+    
 
 	$(".submit").on("click", function(){
 
