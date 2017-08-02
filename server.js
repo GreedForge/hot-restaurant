@@ -69,10 +69,10 @@ app.post("/api/tables", function(req, res){
   if (activeTablesArray.length<5){
     //   console.log(req);
   activeTablesArray.push(newReservation);    
-  return true;
+  res.json(true);
   }
   else{
   waitListArray.push(newReservation);
-  return false;
+  res.json(false);
   }
 });
