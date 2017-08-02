@@ -86,7 +86,7 @@
 
 				// Here we then log the NYTData to console, where it will show up as an object.
 				console.log(tableData);
-				console.log("------------------------------------")
+				console.log("------------------------------------");
 
 				// Loop through and display each of the customers
 				for (var i=0; i<tableData.length; i++){
@@ -94,7 +94,7 @@
 					// Create the HTML Well (Section) and Add the table content for each reserved table
 					var tableSection = $("<div>");
 					tableSection.addClass('well');
-					tableSection.attr('id', 'tableWell-' + i+1)
+					tableSection.attr('id', 'tableWell-' + i+1);
 					$('#tableSection').append(tableSection);
 
 					var tableNumber = i + 1;
@@ -123,7 +123,7 @@
 
 				// Here we then log the NYTData to console, where it will show up as an object.
 				console.log(waitlistData);
-				console.log("------------------------------------")
+				console.log("------------------------------------");
 
 				// Loop through and display each of the customers
 				for (var i=0; i<waitlistData.length; i++){
@@ -131,7 +131,7 @@
 					// Create the HTML Well (Section) and Add the table content for each reserved table
 					var waitlistSection = $("<div>");
 					waitlistSection.addClass('well');
-					waitlistSection.attr('id', 'waitlistWell-' + i+1)
+					waitlistSection.attr('id', 'waitlistWell-' + i+1);
 					$('#waitlistSection').append(waitlistSection);
 
 					var tableNumber = i + 1;
@@ -147,7 +147,7 @@
 
 		var currentURL = window.location.origin;
 		$.ajax({url: currentURL + "/api/clear", method: "POST"})
-
+			
 	}
 
 	$("#clear").on('click', function(){
@@ -156,7 +156,7 @@
 
 		// Refresh the page after data is cleared
 		location.reload();
-	})
+	});
 
 
 	// Run Queries!
